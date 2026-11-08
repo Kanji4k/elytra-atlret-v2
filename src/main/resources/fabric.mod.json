@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "elytraalert",
+  "version": "${version}",
+  "name": "Elytra Alert",
+  "description": "Alerts you when a player wearing an elytra reaches 100 or 200 blocks high. Alert volume up to 1000%. Settings in Mod Menu.",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.example.elytraalert.ElytraAlertClient"],
+    "modmenu": ["com.example.elytraalert.ModMenuImpl"]
+  },
+  "mixins": [
+    { "config": "elytraalert.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": { "modmenu": "*" }
+}

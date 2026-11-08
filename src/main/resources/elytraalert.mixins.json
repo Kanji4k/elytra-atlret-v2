@@ -1,0 +1,7 @@
+{
+  "required": false,
+  "package": "com.example.elytraalert.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": ["EntityMixin"],
+  "injectors": { "defaultRequire": 0 }
+}
